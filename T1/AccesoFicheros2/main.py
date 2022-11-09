@@ -90,19 +90,28 @@ except FileExistsError:
     print('No existe el fichero con la tabla del')
 '''
 #Ejercicio 1
-#numero = int(input("Escribe un numero positivo del 1 al 100\n"))
+
 
 '''
-f = open("ejercicio1-100.txt", "w")
-f.write(numero)
-f.close()
-'''
-'''
-nombre_fichero = "ejercicio1-100.txt"
-with open(nombre_fichero, "w") as f:
+try:
+    numero = int(input("Escribe un numero positivo del 1 al 100\n"))
+    f = open("ejercicio1-100.txt", "w")
     f.write(str(numero))
-f.close()
+    f.close()
+except ValueError:
+    print("El dato introducido es erroneo, por favor ingresa un numero")
 '''
+
+
+try:
+    numero = int(input("Escribe un numero positivo del 1 al 100\n"))
+    nombre_fichero = "ejercicio1-100.txt"
+    with open(nombre_fichero, "w") as f:
+        f.write(str(numero))
+    f.close()
+except ValueError:
+    print("El dato introducido es erroneo, por favor ingresa un numero")
+
 '''
 ¿Por que for y no while?
 Por que sabemos el numero de veces que queremos que se ejecute la accion,
@@ -159,17 +168,25 @@ except FileNotFoundError:
 #Ejercicio6
 '''
 #opcion2
-numero = int(input("Escribe un numero\n"))
-with open("ejercicio2-tabla.txt", "r") as f:
-    texto=(linea for i,linea in enumerate(f) if i>=0 and i<=numero-1)
-    for linea in texto:
-        print(linea)
+try:
+    numero = int(input("Escribe un numero\n"))
+    with open("ejercicio2-tabla.txt", "r") as f:
+        texto=(linea for i,linea in enumerate(f) if i>=0 and i<=numero-1)
+        for linea in texto:
+            print(linea)
+except FileNotFoundError:
+    print("El fichero no existe")
+'''
 '''
 #opcion1
-n=int(input("dame un n de lineas:"))
-with open("ejercicio2-tabla.txt","r") as f:
-    for i in range(n):
-        print(f.readline())
+try:
+    n=int(input("dame un n de lineas:"))
+    with open("ejercicio2-tabla.txt","r") as f:
+        for i in range(n):
+            print(f.readline())
+except FileNotFoundError:
+    print("El fichero no existe")
+'''
 
 
 
