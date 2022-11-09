@@ -102,7 +102,7 @@ except ValueError:
     print("El dato introducido es erroneo, por favor ingresa un numero")
 '''
 
-
+'''
 try:
     numero = int(input("Escribe un numero positivo del 1 al 100\n"))
     nombre_fichero = "ejercicio1-100.txt"
@@ -111,7 +111,7 @@ try:
     f.close()
 except ValueError:
     print("El dato introducido es erroneo, por favor ingresa un numero")
-
+'''
 '''
 ¿Por que for y no while?
 Por que sabemos el numero de veces que queremos que se ejecute la accion,
@@ -119,13 +119,16 @@ si no lo supieramos usariamos while
 '''
 #Ejercicio 2
 '''
-numero = int(input("Escribe un numero positivo del 1 al 10\n"))
-fichero2 = "ejercicio2-tabla.txt"
+try:
+    numero = int(input("Escribe un numero positivo del 1 al 10\n"))
+    fichero2 = "ejercicio2-tabla.txt"
 
-with open(fichero2, "w") as f:
-    for i in range(1,11):
-        f.write(str(i)+"x"+str(numero)+"="+str(i*numero)+"\n")
-f.close()
+    with open(fichero2, "w") as f:
+        for i in range(1,11):
+            f.write(str(i)+"x"+str(numero)+"="+str(i*numero)+"\n")
+    f.close()
+except ValueError:
+    print("El dato introducido es erroneo, por favor ingresa un numero")
 '''
 
 #Ejercicio 3
