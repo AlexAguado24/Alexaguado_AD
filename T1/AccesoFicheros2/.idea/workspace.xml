@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db6d101e-00f1-4bb7-8af5-254c8fd96517" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Diccionarios.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ejercicio2-tabla del 5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ejercicio2-tabla del 9.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ejercicio1-100.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ejercicio1-100.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ejercicio2-tabla.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ejercicio2-tabla.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ficheroenpython.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ficheroenpython.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Diccionarios.py" beforeDir="false" afterPath="$PROJECT_DIR$/Diccionarios.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
