@@ -27,7 +27,7 @@ f.write("Este es mi primer progrma de fichero y lo he escrito en python usando l
 f.close()
 '''
 
-#escribiendo un fichero de con 'with as'
+#escribiendo un fichero de con 'with...as'
 '''
 with open("ficheroenpython.txt", "w") as f:
     f.write("Este es mi primer progrma de fichero y lo he escrito en python usando la \n"
