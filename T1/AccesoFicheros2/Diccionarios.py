@@ -29,7 +29,7 @@ print(MiDiccionario['Edad'])
 
 MiDiccionario['Grupo'] = ""
 
-# Cambiar el nobre de una clave por otro
+# Cambiar el nombre de una clave por otro
 
 MiDiccionario["Casa"] = MiDiccionario.pop("Grupo")
 
@@ -125,7 +125,7 @@ print(midic2)
 abrir el fichero en modo lectura
 guardar el contenido en una variable
 cerar el fichero 
-iterar sonre el contenido cada linea
+iterar sobre el contenido cada linea
 imprimir lo que se pide:
     a: cada linea
     b:tuplear

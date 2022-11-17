@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db6d101e-00f1-4bb7-8af5-254c8fd96517" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../AgendaTelefonica/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../AgendaTelefonica/.idea/AgendaTelefonica.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../AgendaTelefonica/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../AgendaTelefonica/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../AgendaTelefonica/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../AgendaTelefonica/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../AgendaTelefonica/miAgenda.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AgendaTelefonica/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../AgendaTelefonica/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AgendaTelefonica/miAgenda.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../AgendaTelefonica/miAgenda.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Diccionarios.py" beforeDir="false" afterPath="$PROJECT_DIR$/Diccionarios.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
