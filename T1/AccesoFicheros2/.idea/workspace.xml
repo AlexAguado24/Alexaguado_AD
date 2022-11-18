@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db6d101e-00f1-4bb7-8af5-254c8fd96517" name="Changes" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/../AgendaNueva/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/../../AgendaTelefonica/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../AgendaTelefonica/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AgendaTelefonica/miAgenda.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../AgendaTelefonica/miAgenda.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Diccionarios.py" beforeDir="false" afterPath="$PROJECT_DIR$/Diccionarios.py" afterDir="false" />
+>>>>>>> dda226038d28f4c61a3c7c4f8b10efb02e73f921
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
