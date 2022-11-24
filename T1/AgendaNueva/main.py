@@ -2,24 +2,26 @@
 # -*- coding: utf-8 -*-
 import os, sys
 
-#Declaro las variables del programa principal
+
+# Declaro las variables del programa principal
 
 
-#Declaro las funciones/....
+# Declaro las funciones/....
 
 def consultarContacto(file, cliente):
-   try:
-       f = open(file,"r")
-   except FileNotFoundError:
-       return "Primero debes crear el archivo"
-   else:
-       directorio = f.readlines()
-       f.close()
-       directorio = dict([tuple(line.split(",")) for line in directorio])
-       if cliente in directorio:
-           return ("Nombre: "+ cliente +"  Teléfono: " + directorio.get(cliente))
-       else:
-           return ("El contacto " + cliente + " no está en la agenda")
+    try:
+        f = open(file, "r")
+    except FileNotFoundError:
+        return "Primero debes crear el archivo"
+    else:
+        directorio = f.readlines()
+        f.close()
+        directorio = dict([tuple(line.split(",")) for line in directorio])
+        if cliente in directorio:
+            return ("Nombre: " + cliente + "  Teléfono: " + directorio.get(cliente))
+        else:
+            return ("El contacto " + cliente + " no está en la agenda")
+
 
 def telefono_nuevo(file, cliente, telefono):
     try:
@@ -42,10 +44,9 @@ def crear_fichero(file):
             Ademas, debe comprobar si el fichero existe o no. y si existe, lo machaca
     '''
     if os.path.isfile(file):
-        answer = input('El fichero'+ file+ ' ya existe. ¿Desea vaciarlo (S/N)?')
+        answer = input('El fichero' + file + ' ya existe. ¿Desea vaciarlo (S/N)?')
         if answer == 'N':
             return 'No se ha creado el fichero porque ya existe.\n'
-
 
     f = open(file, 'w')
     f.close()
@@ -69,6 +70,7 @@ def menu():
     opcion1 = str(input("Introduce la opcion deseada\n"))
     return opcion1
 
+
 def lanzarPrograma():
     '''
     Funcion que lanza las opciones del menu de la aplicacion para la gestion de
@@ -77,27 +79,26 @@ def lanzarPrograma():
 
     fichero = 'miagenda.txt'
     while True:
-        opcion=str(menu())
-        print("La opcion pulsada es: ",opcion)
+        opcion = str(menu())
+        print("La opcion pulsada es: ", opcion)
         if opcion == '1':
             nombre = str(input("introduce el nombre"))
-            consultarContacto(fichero,nombre)
+            consultarContacto(fichero, nombre)
         elif opcion == '2':
             nombre = str(input("introduce el nombre"))
             telf = str(input("introduce el telefono"))
-            print(telefono_nuevo(fichero,nombre,telf))
+            print(telefono_nuevo(fichero, nombre, telf))
         elif opcion == '3':
             return "Primero debes crear el archivo"
         elif opcion == '4':
             print(crear_fichero(fichero))
         else:
             break
-        #return
+        # return
 
 
-
-#-------------------Programa Principal--------------------
-#Examen ¿Que se descarga p`rimero las lñibrerias o las variables? Respuesta: Las librerias
+# -------------------Programa Principal--------------------
+# Examen ¿Que se descarga primero las librerias o las variables? Respuesta: Las librerias
 
 print("Ejecutando lanzar programa")
 lanzarPrograma()

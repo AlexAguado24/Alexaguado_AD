@@ -1,8 +1,0 @@
-Este es mi primer progrma de fichero y lo he escrito en python usando la 
-forma recomendada, que es la siguiente 
-with open as f 
-f.write 
-f.close
-Escribiendo 
-listas 
-en ficheros
