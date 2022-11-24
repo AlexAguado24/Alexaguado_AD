@@ -191,6 +191,31 @@ except FileNotFoundError:
     print("El fichero no existe")
 '''
 
+fichero = "fichero_practica.txt"
+
+with open(fichero,"w")as f:
+    f.write("a,1\n"
+            "b,2\n"
+            "c,3\n"
+            "d,4\n"
+            "f,5\n")
+    f.close()
+
+line=str()
+
+letra = str(input("letra"))
+
+f = open(fichero, "r")
+contenido = f.readlines()
+#contenido = dict([tuple(line.split(",")) for line in contenido])
+
+for line in contenido:
+    linea = tuple(line.split(","))
+    if linea[0] == letra:
+        print(linea[1])
+        break
+    
+
 
 
 
