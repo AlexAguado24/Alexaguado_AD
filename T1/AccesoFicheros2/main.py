@@ -190,7 +190,7 @@ try:
 except FileNotFoundError:
     print("El fichero no existe")
 '''
-
+'''
 fichero = "fichero_practica.txt"
 
 with open(fichero,"w")as f:
@@ -214,7 +214,11 @@ for line in contenido:
     if linea[0] == letra:
         print(linea[1])
         break
-    
+'''
+
+lista = ["paco","maco","baco"]
+
+print(lista)
 
 
 
