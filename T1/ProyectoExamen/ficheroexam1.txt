@@ -1,0 +1,16 @@
+El numero es:0
+El numero es:1
+El numero es:2
+El numero es:3
+El numero es:4
+El numero es:5
+---------------
+El numero es:0
+El numero es:1
+El numero es:2
+El numero es:3
+El numero es:4
+El numero es:5
+El numero es:6
+El numero es:7
+------------------
