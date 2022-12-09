@@ -91,6 +91,7 @@ MiDiccionario['Nombre']=nombre
 MiDiccionario['Apellido']=apellido
 MiDiccionario['Edad']=edad
 MiDiccionario['Teléfono']=telefono
+
 '''
 
 '''
@@ -144,6 +145,11 @@ with open(fichero, "w") as f:
     for i in range(operacion(num1, num2, num3)+1):
         f.write("El calculo es:" + str(numero) + " y esta en la linea:" + str(i) + "\n")
     f.close()
+    
+--> correccion de examen    
+with open () as f:
+    for i in range(1, c+1):
+        f.write()
 
 8.b):
 Programa que ejecuta el programa anterior pero esta vez escribe por teclado el numero 
@@ -170,6 +176,33 @@ linea = ([tuple(line.split("\n"))for line in contenido])
 print("Ahora se mostrara el contenido de calcular a+b="+str(suma)+"\n")
 for i in range(suma+1):
     print(linea[i])
+    
+
+-->Correccion de examen
+
+a = input(numero 1)
+b = input(numero 2)
+c = input(numero 3)
+    
+a=a+b  #en la propia variable que inicialmente leo un numero añado el resultado de ese numero mas b
+c=a+b
+
+nombre_fichero=''
+
+with open (,''w) as f:
+    for i in range(1, c+1):
+        f.write()
+    f.close()
+    
+print
+
+with open(,'r')as f:
+    for contador  in range(a):
+        print(f.readlines(a))
+
+
+
+    
     
 8.c)
 El programa trata la lectura del fichero con un try except por si el fichero no existe
@@ -200,3 +233,51 @@ except FileNotFoundError:
     print("el fichero no existe")
 
 '''
+
+'''Ejercicio 9'''
+
+def consulta_errores(fichero2):
+    try:
+        f = open(fichero2,"r")
+        directorio = f.readlines()
+        f.close()
+        for i in range(len(directorio)):
+            print(directorio[i])
+    
+        print("Comprobando tamaño")
+        f = open(fichero2,"r")
+        directorio = f.readlines()
+        print("El fichero con datos de desvio contiene ",len(directorio)," posibles errores de trayectoria")
+        
+    except FileNotFoundError:
+        print("\n El fichero "+fichero2+" no existe!\n")
+
+
+
+def inicio():
+    file = 'ficheroexam3.txt'
+    file2 = 'ficheroexam4.txt'
+    while True:
+        opcion = menu()
+        if opcion == '1':
+            consulta_errores(file2)
+        elif opcion == '2':
+            if existe_error(file,file2):
+                print("Se encontraron todos los errores")
+            else:
+                print("no se encontraron todos los errores")
+        elif opcion == '3':
+            borrar_errores(file,file2)
+        else:
+            print("Desconectado")
+            print("....")
+            break
+        
+
+
+
+inicio()
+
+
+
+
