@@ -253,6 +253,15 @@ def consulta_errores(fichero2):
         print("\n El fichero "+fichero2+" no existe!\n")
 
 
+def menu():
+    print("1.Consultar errores")
+    print("2.buscar error")
+    print("3.eliminar error")
+    print("terminar")
+    opcionMenu = input("introduce opcion")
+    return opcionMenu
+
+
 
 def inicio():
     file = 'ficheroexam3.txt'
