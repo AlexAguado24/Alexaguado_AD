@@ -28,7 +28,7 @@ def valorDerecha(nodo):
 def insertarValor(nodo, dato):
     if nodo.valor == dato:
         print("Este numero ya esta en el arbol")
-    elif nodo.dato > valor:
+    elif nodo['valor'] > dato:
         if valorIzquierda():
             nodo.izquierdo.insertarValor()
         else:
