@@ -3,12 +3,11 @@ arbol = {}
 dato = int(input("Introduce un numero mayor que 0"))
 
 nodo = {
-    'raiz': None,
-    'valor': None,
-    'izquierdo': None,
-    'derecho': None
+    raiz = None
+    valor = None
+    izquierdo = None
+    derecho = None
 }
-
 
 def esVacio(nodo):
     if nodo.raiz == None:
@@ -16,14 +15,11 @@ def esVacio(nodo):
     else:
         return false
 
-
 def valorIzquierda(nodo):
     return nodo.izquierdo != None
 
-
 def valorDerecha(nodo):
     return nodo.derecho != None
-
 
 def insertarValor(nodo, dato):
     if nodo.valor == dato:
@@ -39,8 +35,7 @@ def insertarValor(nodo, dato):
         else:
             nodo.derecho = dato
 
-
-def buscarDato(nodo, dato):
+def buscarDato(nodo,dato):
     if nodo.valor == dato:
         return dato
     elif valorIzquierda():
@@ -53,7 +48,6 @@ def buscarDato(nodo, dato):
             return dato
         else:
             nodo.derecho.buscarDato()
-
 
 def eliminarDato(nodo, dato):
     if nodo.valor == dato:
