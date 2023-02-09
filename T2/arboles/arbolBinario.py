@@ -71,6 +71,7 @@ def insertarValorDos(nodo, sitio,arbol):
                             meter = i
                     insertarValor(arbol, meter, nodo)
 
+
 def buscarDato(nodo,dato):
     if nodo.valor == dato:
         return dato
