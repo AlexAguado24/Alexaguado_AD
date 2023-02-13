@@ -44,8 +44,6 @@ def busqueda(listaNew):
             listaMayores.append(i)
         else:
             listaMenores.append(i)
-    listaNew += listaMenores + listaMayores
-    busqueda(listaNew)
 
 
 busqueda(lista)
