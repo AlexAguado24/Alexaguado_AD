@@ -1,0 +1,3 @@
+Reglas complpejidad computacional: 
+¿Que hace falta en el algoritmo busqueda binaria? que la lista este ordenada;
+¿compensa usar este organitmo? en general si compensa
